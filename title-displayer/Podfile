@@ -1,0 +1,10 @@
+
+platform :macos, '10.12'
+
+target 'title-displayer' do
+
+  use_frameworks!
+
+  pod 'YapAnimator'
+
+end
