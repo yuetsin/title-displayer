@@ -22,6 +22,8 @@ class MainViewController: NSViewController {
         viewController = (windowController?.contentViewController as! DisplayerViewController)
         
         windowController?.showWindow(self)
+        
+        
         windowController?.window?.title = "正在展示" + (self.view.window?.title ?? "字幕")
         shrinkFrame()
         updateNextPrompt()

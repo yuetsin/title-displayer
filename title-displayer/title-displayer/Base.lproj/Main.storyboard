@@ -160,7 +160,7 @@
         <scene sceneID="aYt-VX-aZA">
             <objects>
                 <viewController id="whO-MJ-H81" customClass="DisplayerViewController" customModule="title_displayer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="ewi-Je-JsQ">
+                    <view key="view" wantsLayer="YES" id="ewi-Je-JsQ">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -176,7 +176,11 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4C-s0-v3h">
                                 <rect key="frame" x="18" y="20" width="450" height="29"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="Label" id="RZI-5U-aaf">
+                                <shadow key="shadow" blurRadius="8">
+                                    <size key="offset" width="0.0" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="RZI-5U-aaf">
                                     <font key="font" metaFont="system" size="24"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -262,8 +266,8 @@
                                 </popUpButtonCell>
                                 <connections>
                                     <action selector="onSelectionChanged:" target="5gI-5U-AMq" id="3Td-FN-wzx"/>
-                                    <binding destination="5gI-5U-AMq" name="content" keyPath="titles" id="9dZ-IA-daa"/>
                                     <binding destination="5gI-5U-AMq" name="selectedIndex" keyPath="selectedIndex" previousBinding="9dZ-IA-daa" id="YAS-pp-hKb"/>
+                                    <binding destination="5gI-5U-AMq" name="content" keyPath="titles" id="9dZ-IA-daa"/>
                                 </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-AA-6Jl">
@@ -279,7 +283,7 @@
                                 <rect key="frame" x="18" y="53" width="66" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="下条字幕：" id="rz1-o2-10w">
-                                    <font key="font" metaFont="system" size="12"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -373,7 +377,7 @@ DQ
                                 <rect key="frame" x="82" y="52" width="233" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Contents" id="Yn1-ne-zko">
-                                    <font key="font" metaFont="system" size="12"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

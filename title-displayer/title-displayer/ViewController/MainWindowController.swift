@@ -14,7 +14,6 @@ class MainWindowController: NSWindowController {
         super.init(coder: coder)
         
         shouldCascadeWindows = true
-        
         // 让多个字幕窗口层叠显示
     }
 
@@ -22,6 +21,8 @@ class MainWindowController: NSWindowController {
         super.windowDidLoad()
     
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        
+        self.window?.level = NSWindow.Level.statusBar
     }
 
 }
