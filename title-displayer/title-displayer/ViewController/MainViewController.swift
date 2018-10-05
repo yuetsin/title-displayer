@@ -12,7 +12,7 @@ class MainViewController: NSViewController {
 
     
     override func viewDidAppear() {
-        if titlesArray.count == 0 {
+        if titles.count == 0 {
             self.view.window?.close()
             return
         }
@@ -24,6 +24,7 @@ class MainViewController: NSViewController {
         windowController?.showWindow(self)
         windowController?.window?.title = "正在展示" + (self.view.window?.title ?? "字幕")
         shrinkFrame()
+        updateNextPrompt()
         viewController?.updateLabelSize(to: fontSize)
     }
     
@@ -32,7 +33,7 @@ class MainViewController: NSViewController {
     }
     
     @objc dynamic var selectedIndex: Int = 0
-    @objc dynamic var titlesArray: [String] = []
+    @objc dynamic var titles: [String] = []
     
     var fontSize: Int = 24
     var windowController: TransparentWindowController?
@@ -56,7 +57,7 @@ class MainViewController: NSViewController {
     }
     
     @IBAction func goNext(_ sender: NSButton) {
-        if selectedIndex != titlesArray.count - 1 {
+        if selectedIndex != titles.count - 1 {
             self.selectedIndex += 1
             updateNextPrompt()
         }
@@ -106,9 +107,9 @@ class MainViewController: NSViewController {
         
         set(inData) {
 
-            if let raw = String(data: inData, encoding: .utf8)?.sanitize() {
+            if let raw = String(data: inData, encoding: .utf8) {
                 print("gotta raw = \(raw)")
-                self.titlesArray = raw.components(separatedBy: "\n")
+                self.titles = raw.components(separatedBy: "\n")
                 updateNextPrompt()
             } else {
                 showErrorMessage("数据似乎无效？")
@@ -140,15 +141,16 @@ class MainViewController: NSViewController {
     }
     
     func updateNextPrompt() {
+        viewController?.setText(to: titles[selectedIndex])
         if selectedIndex == 0 {
             self.leftButton.isEnabled = false
         } else {
             self.leftButton.isEnabled = true
         }
         
-        if selectedIndex < titlesArray.count - 1 {
+        if selectedIndex < titles.count - 1 {
             self.rightButton.isEnabled = true
-            nextPrompt.stringValue = titlesArray[selectedIndex + 1]
+            nextPrompt.stringValue = titles[selectedIndex + 1]
             if nextPrompt.stringValue.remove(" ") == "" {
                 nextPrompt.stringValue = "(空)"
             }
@@ -158,10 +160,16 @@ class MainViewController: NSViewController {
         }
     }
     
+    @IBAction func switchFade(_ sender: NSButton) {
+        viewController?.switchFade()
+    }
+    
     func shrinkFrame() {
+        
         var frame: NSRect = (windowController?.window?.frame)!
         frame.size = NSSize(width: frameSize[0], height: frameSize[1])
         windowController?.window?.setFrame(frame, display: true, animate: true)
+        viewController?.updateLabelSize(to: fontSize)
     }
 }
 

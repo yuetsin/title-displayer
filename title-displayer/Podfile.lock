@@ -1,0 +1,16 @@
+PODS:
+  - YapAnimator (1.2.0)
+
+DEPENDENCIES:
+  - YapAnimator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YapAnimator
+
+SPEC CHECKSUMS:
+  YapAnimator: eecfd13c5a65087c2af4ddb11a09f7693edec966
+
+PODFILE CHECKSUM: d0a56a02f209400e18ace4f9db79e8102cf8d504
+
+COCOAPODS: 1.5.3

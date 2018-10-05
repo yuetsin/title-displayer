@@ -16,6 +16,7 @@
 		8AE7F8FE21664A1600DA2FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE7F8FC21664A1600DA2FD2 /* Main.storyboard */; };
 		8AE7F90721664D8000DA2FD2 /* TransparentWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7F90621664D8000DA2FD2 /* TransparentWindowController.swift */; };
 		8AEA967521675D1300B84329 /* DisplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA967421675D1300B84329 /* DisplayerViewController.swift */; };
+		95297F73CF9E4FD1706BC4D7 /* Pods_title_displayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EC6C1160FF34B92A063F39 /* Pods_title_displayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,9 @@
 		8AE7F90021664A1600DA2FD2 /* title_displayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = title_displayer.entitlements; sourceTree = "<group>"; };
 		8AE7F90621664D8000DA2FD2 /* TransparentWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWindowController.swift; sourceTree = "<group>"; };
 		8AEA967421675D1300B84329 /* DisplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayerViewController.swift; sourceTree = "<group>"; };
+		A6EC6C1160FF34B92A063F39 /* Pods_title_displayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_title_displayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3BE4FFB2ED0509F5DA30CC /* Pods-title-displayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-title-displayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-title-displayer/Pods-title-displayer.debug.xcconfig"; sourceTree = "<group>"; };
+		E0792E85006CE22EAF7A6190 /* Pods-title-displayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-title-displayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-title-displayer/Pods-title-displayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,12 +42,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95297F73CF9E4FD1706BC4D7 /* Pods_title_displayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85B5285C2D1B9F6F5BCE506E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA3BE4FFB2ED0509F5DA30CC /* Pods-title-displayer.debug.xcconfig */,
+				E0792E85006CE22EAF7A6190 /* Pods-title-displayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8AD9AA952167019600B6F8DA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,8 @@
 			children = (
 				8AE7F8F321664A1500DA2FD2 /* title-displayer */,
 				8AE7F8F221664A1500DA2FD2 /* Products */,
+				85B5285C2D1B9F6F5BCE506E /* Pods */,
+				FE0E15B61931A358B01F6DCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +102,14 @@
 			path = "title-displayer";
 			sourceTree = "<group>";
 		};
+		FE0E15B61931A358B01F6DCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6EC6C1160FF34B92A063F39 /* Pods_title_displayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AE7F90321664A1600DA2FD2 /* Build configuration list for PBXNativeTarget "title-displayer" */;
 			buildPhases = (
+				6996EDB6FF7FE355B802BB5E /* [CP] Check Pods Manifest.lock */,
 				8AE7F8ED21664A1500DA2FD2 /* Sources */,
 				8AE7F8EE21664A1500DA2FD2 /* Frameworks */,
 				8AE7F8EF21664A1500DA2FD2 /* Resources */,
+				2823F1C5DE1A42930AB884AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,6 +176,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2823F1C5DE1A42930AB884AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-title-displayer/Pods-title-displayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YapAnimator/YapAnimator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapAnimator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-title-displayer/Pods-title-displayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6996EDB6FF7FE355B802BB5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-title-displayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AE7F8ED21664A1500DA2FD2 /* Sources */ = {
@@ -297,9 +370,11 @@
 		};
 		8AE7F90421664A1600DA2FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA3BE4FFB2ED0509F5DA30CC /* Pods-title-displayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "title-displayer/title_displayer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 24XARD42BP;
@@ -311,15 +386,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.title-displayer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		8AE7F90521664A1600DA2FD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0792E85006CE22EAF7A6190 /* Pods-title-displayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "title-displayer/title_displayer.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 24XARD42BP;
@@ -331,6 +409,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuxiqian.title-displayer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

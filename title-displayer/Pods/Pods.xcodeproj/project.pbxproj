@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		373ACC1D77E8A09C18C6A67D36C274CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+		423B02E4EFD10F189412BB8B5EDF64B7 /* Pods-title-displayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 736D6765D947494C27F2CB1E6F8D2436 /* Pods-title-displayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		425B3C2B2A0A35000CCD5503FF77EB5C /* Pods-title-displayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E48ECC17A86F01640C29F0F8915C9D1F /* Pods-title-displayer-dummy.m */; };
+		6885E82295F764310E288E15AA346D25 /* YapAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F96C92E650D4A44EF75D02DAB2ADA3 /* YapAnimator-dummy.m */; };
+		8062D1573B8FDB745E35626F17FECBAA /* YapAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B85953F6FFAE68605F762A5037C45868 /* YapAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		877054D2DD7217842E398BBC5C34C017 /* AnimatableLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A30BE024740CB5C34D7F3B0DA539D2 /* AnimatableLayer.swift */; };
+		B17F19B2502628623BEA0AFF81D0DCFF /* YapAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FADFF40C4D482963604159F8B15D07A /* YapAnimator.swift */; };
+		C87083863427DC5BDBF7C0C82F564C9C /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916BD9C45C62B1D7F7675E67A26AF69E /* Animatable.swift */; };
+		DBE9CC4DE276A9BA9953FC7B57373AA5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC7F7C2371D4C8107A49AB493269504B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC32DAE08EAA462E3ED251EC69F1855;
+			remoteInfo = YapAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12800D3FB1680F8355EC11FB6E585012 /* YapAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YapAnimator.xcconfig; sourceTree = "<group>"; };
+		2F90F845573E4E6BC290A2C9CB39E89A /* Pods-title-displayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-title-displayer.debug.xcconfig"; sourceTree = "<group>"; };
+		337C4BFD1B617AEBDD413CFAB81E6808 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42CAC3B336955BE450E6297175B6DCF9 /* Pods-title-displayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-title-displayer.release.xcconfig"; sourceTree = "<group>"; };
+		43F96C92E650D4A44EF75D02DAB2ADA3 /* YapAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YapAnimator-dummy.m"; sourceTree = "<group>"; };
+		5497DD31C0693F9AFF3F34350BAE91E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56CBCC40F336FF53D03E791508DAE89A /* Pods-title-displayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-title-displayer-acknowledgements.plist"; sourceTree = "<group>"; };
+		736D6765D947494C27F2CB1E6F8D2436 /* Pods-title-displayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-title-displayer-umbrella.h"; sourceTree = "<group>"; };
+		76B6EB4C991ADF8D5F161310A46E419F /* Pods-title-displayer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-title-displayer-frameworks.sh"; sourceTree = "<group>"; };
+		7B1A5571B5D64CE9704D357923C966DC /* Pods-title-displayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-title-displayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		83A30BE024740CB5C34D7F3B0DA539D2 /* AnimatableLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableLayer.swift; path = Source/AnimatableLayer.swift; sourceTree = "<group>"; };
+		916BD9C45C62B1D7F7675E67A26AF69E /* Animatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animatable.swift; path = Source/Animatable.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FADFF40C4D482963604159F8B15D07A /* YapAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YapAnimator.swift; path = Source/YapAnimator.swift; sourceTree = "<group>"; };
+		A22D748C9E7726CC390D0A3648CA3E59 /* YapAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YapAnimator.modulemap; sourceTree = "<group>"; };
+		B74CCECC111A5999C0D17C263CAB032C /* Pods-title-displayer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-title-displayer-resources.sh"; sourceTree = "<group>"; };
+		B85953F6FFAE68605F762A5037C45868 /* YapAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-umbrella.h"; sourceTree = "<group>"; };
+		C169D8394D91C0DD0784A634DD2CC706 /* YapAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YapAnimator.framework; path = YapAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48A17117F31D7088DA08160F9C2B723 /* YapAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YapAnimator-prefix.pch"; sourceTree = "<group>"; };
+		DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E48ECC17A86F01640C29F0F8915C9D1F /* Pods-title-displayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-title-displayer-dummy.m"; sourceTree = "<group>"; };
+		E55BA13C5C2DB027F216EAE52C872FD5 /* Pods_title_displayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_title_displayer.framework; path = "Pods-title-displayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86FE498BDAF920896844273C7C6DF84 /* Pods-title-displayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-title-displayer.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		984DF8BFF005FFFE355479A5831617B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE9CC4DE276A9BA9953FC7B57373AA5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC934C2ADBA624687EE40D3DCA7DFDD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373ACC1D77E8A09C18C6A67D36C274CA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F72041B6C8DB41E3AD057799C59E057 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				98BD9580BD1B23CCAA7307023700167F /* Pods-title-displayer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7AC8429882A95AA0810A9DCDED54FF /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70795439D3AB8938332A414E34406895 /* YapAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				916BD9C45C62B1D7F7675E67A26AF69E /* Animatable.swift */,
+				83A30BE024740CB5C34D7F3B0DA539D2 /* AnimatableLayer.swift */,
+				9FADFF40C4D482963604159F8B15D07A /* YapAnimator.swift */,
+				92AB703A828027CDDA89CC1D120ACC18 /* Support Files */,
+			);
+			name = YapAnimator;
+			path = YapAnimator;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				83B86F5E66EBC68370492D322212529A /* Pods */,
+				902CFB11A7749C4F1700F9608FCED45B /* Products */,
+				2F72041B6C8DB41E3AD057799C59E057 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		83B86F5E66EBC68370492D322212529A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70795439D3AB8938332A414E34406895 /* YapAnimator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		902CFB11A7749C4F1700F9608FCED45B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E55BA13C5C2DB027F216EAE52C872FD5 /* Pods_title_displayer.framework */,
+				C169D8394D91C0DD0784A634DD2CC706 /* YapAnimator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92AB703A828027CDDA89CC1D120ACC18 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5497DD31C0693F9AFF3F34350BAE91E8 /* Info.plist */,
+				A22D748C9E7726CC390D0A3648CA3E59 /* YapAnimator.modulemap */,
+				12800D3FB1680F8355EC11FB6E585012 /* YapAnimator.xcconfig */,
+				43F96C92E650D4A44EF75D02DAB2ADA3 /* YapAnimator-dummy.m */,
+				D48A17117F31D7088DA08160F9C2B723 /* YapAnimator-prefix.pch */,
+				B85953F6FFAE68605F762A5037C45868 /* YapAnimator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YapAnimator";
+			sourceTree = "<group>";
+		};
+		98BD9580BD1B23CCAA7307023700167F /* Pods-title-displayer */ = {
+			isa = PBXGroup;
+			children = (
+				337C4BFD1B617AEBDD413CFAB81E6808 /* Info.plist */,
+				F86FE498BDAF920896844273C7C6DF84 /* Pods-title-displayer.modulemap */,
+				7B1A5571B5D64CE9704D357923C966DC /* Pods-title-displayer-acknowledgements.markdown */,
+				56CBCC40F336FF53D03E791508DAE89A /* Pods-title-displayer-acknowledgements.plist */,
+				E48ECC17A86F01640C29F0F8915C9D1F /* Pods-title-displayer-dummy.m */,
+				76B6EB4C991ADF8D5F161310A46E419F /* Pods-title-displayer-frameworks.sh */,
+				B74CCECC111A5999C0D17C263CAB032C /* Pods-title-displayer-resources.sh */,
+				736D6765D947494C27F2CB1E6F8D2436 /* Pods-title-displayer-umbrella.h */,
+				2F90F845573E4E6BC290A2C9CB39E89A /* Pods-title-displayer.debug.xcconfig */,
+				42CAC3B336955BE450E6297175B6DCF9 /* Pods-title-displayer.release.xcconfig */,
+			);
+			name = "Pods-title-displayer";
+			path = "Target Support Files/Pods-title-displayer";
+			sourceTree = "<group>";
+		};
+		FA7AC8429882A95AA0810A9DCDED54FF /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DF428FC7C7A6555B2B02D8E238C8D8F2 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		275CA9A63C12DB1CB26F19FBE4F6FC6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8062D1573B8FDB745E35626F17FECBAA /* YapAnimator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABFE25FCC120EE683B615DD8F1001F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423B02E4EFD10F189412BB8B5EDF64B7 /* Pods-title-displayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1FC32DAE08EAA462E3ED251EC69F1855 /* YapAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DE261CE1DE64B39DC558F9265BB31E /* Build configuration list for PBXNativeTarget "YapAnimator" */;
+			buildPhases = (
+				275CA9A63C12DB1CB26F19FBE4F6FC6B /* Headers */,
+				42669907171FD47B72C06145058801E4 /* Sources */,
+				984DF8BFF005FFFE355479A5831617B0 /* Frameworks */,
+				1F17EE5D09AB9A6DE8C9D99EC82A1F6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YapAnimator;
+			productName = YapAnimator;
+			productReference = C169D8394D91C0DD0784A634DD2CC706 /* YapAnimator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FB339E98EABBAD49B5BD8894E5CF358 /* Pods-title-displayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B7D19DB8A746F51A9CD829653CFC4C /* Build configuration list for PBXNativeTarget "Pods-title-displayer" */;
+			buildPhases = (
+				FABFE25FCC120EE683B615DD8F1001F9 /* Headers */,
+				B88056DABF4D6ECB57446EB925D111CD /* Sources */,
+				FC934C2ADBA624687EE40D3DCA7DFDD2 /* Frameworks */,
+				BDC7FC0286DFEFDB426F50E46639B6A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				530CE5B101F9B3D1A21EC0080F6D5CA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-title-displayer";
+			productName = "Pods-title-displayer";
+			productReference = E55BA13C5C2DB027F216EAE52C872FD5 /* Pods_title_displayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 902CFB11A7749C4F1700F9608FCED45B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FB339E98EABBAD49B5BD8894E5CF358 /* Pods-title-displayer */,
+				1FC32DAE08EAA462E3ED251EC69F1855 /* YapAnimator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F17EE5D09AB9A6DE8C9D99EC82A1F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC7FC0286DFEFDB426F50E46639B6A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42669907171FD47B72C06145058801E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C87083863427DC5BDBF7C0C82F564C9C /* Animatable.swift in Sources */,
+				877054D2DD7217842E398BBC5C34C017 /* AnimatableLayer.swift in Sources */,
+				6885E82295F764310E288E15AA346D25 /* YapAnimator-dummy.m in Sources */,
+				B17F19B2502628623BEA0AFF81D0DCFF /* YapAnimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88056DABF4D6ECB57446EB925D111CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				425B3C2B2A0A35000CCD5503FF77EB5C /* Pods-title-displayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		530CE5B101F9B3D1A21EC0080F6D5CA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YapAnimator;
+			target = 1FC32DAE08EAA462E3ED251EC69F1855 /* YapAnimator */;
+			targetProxy = EC7F7C2371D4C8107A49AB493269504B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BF9910DD41FD7694625253C1793004A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F90F845573E4E6BC290A2C9CB39E89A /* Pods-title-displayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-title-displayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-title-displayer/Pods-title-displayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAE036300014AD58C0D102794EB23ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12800D3FB1680F8355EC11FB6E585012 /* YapAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
+				PRODUCT_MODULE_NAME = YapAnimator;
+				PRODUCT_NAME = YapAnimator;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C14363075AB5B62A9173AF90CF400F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C1ECCF52DC1F978B7F32EC3AD6AE9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DBF5523786CE9ED712D506986FA6D174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CAC3B336955BE450E6297175B6DCF9 /* Pods-title-displayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-title-displayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-title-displayer/Pods-title-displayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F61114AD0F0ACE45C91E662FFD09AA4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12800D3FB1680F8355EC11FB6E585012 /* YapAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/YapAnimator/YapAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YapAnimator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/YapAnimator/YapAnimator.modulemap";
+				PRODUCT_MODULE_NAME = YapAnimator;
+				PRODUCT_NAME = YapAnimator;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26B7D19DB8A746F51A9CD829653CFC4C /* Build configuration list for PBXNativeTarget "Pods-title-displayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BF9910DD41FD7694625253C1793004A /* Debug */,
+				DBF5523786CE9ED712D506986FA6D174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14363075AB5B62A9173AF90CF400F5B /* Debug */,
+				C1ECCF52DC1F978B7F32EC3AD6AE9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DE261CE1DE64B39DC558F9265BB31E /* Build configuration list for PBXNativeTarget "YapAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F61114AD0F0ACE45C91E662FFD09AA4B /* Debug */,
+				BAE036300014AD58C0D102794EB23ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import YapAnimator
 
 class DisplayerViewController: NSViewController {
 
@@ -15,18 +16,39 @@ class DisplayerViewController: NSViewController {
         // Do view setup here.
     }
     
-    @objc dynamic var fontSize = 24
+    var isFaded: Bool = false
+    
+    let standardFontSize = 24
     
     func updateLabelSize(to size: Int) {
-        let width = Int(self.titlePlacer.frame.width)
-        let newSize = NSSize(width: width, height: size + 5)
-        titlePlacer.setFrameSize(newSize)
-        fontSize = size
+
+        titlePlacer.animated?.scale.animate(to: CGFloat(Double(size) / Double(standardFontSize)))
     }
     
     @IBOutlet weak var titlePlacer: NSTextField!
     
-    func fadeOut() {
-        
+    func switchFade() {
+        if isFaded {
+            self.titlePlacer.animated?.opacity.animate(to: 1.0)
+            isFaded = false
+        } else {
+            self.titlePlacer.animated?.opacity.animate(to: 0.0)
+            isFaded = true
+        }
+    }
+
+    
+    func setText(to str: String) {
+        if self.titlePlacer.stringValue.sanitize() != "" {
+            titlePlacer.animated?.opacity.animate(to: 0.0) {_,_ in
+                self.titlePlacer.stringValue = str
+                self.titlePlacer.animated?.opacity.animate(to: 1.0)
+            }
+        } else {
+            titlePlacer.animated?.opacity.instant(to: 0.0)
+            self.titlePlacer.stringValue = str
+            self.titlePlacer.animated?.opacity.animate(to: 1.0)
+        }
+        isFaded = false
     }
 }
