@@ -23,6 +23,8 @@ class MainViewController: NSViewController {
         
         windowController?.showWindow(self)
         
+        self.view.window?.isMovableByWindowBackground = true
+        windowController?.window?.isMovableByWindowBackground = true
         
         windowController?.window?.title = "正在展示" + (self.view.window?.title ?? "字幕")
         shrinkFrame()
@@ -46,6 +48,8 @@ class MainViewController: NSViewController {
     @IBOutlet weak var rightButton: NSButton!
     
     @IBOutlet weak var nextPrompt: NSTextField!
+    
+    var titleWindowController: TransparentWindowController?
     
     @IBAction func onSelectionChanged(_ sender: NSPopUpButton) {
         updateNextPrompt()
@@ -100,6 +104,11 @@ class MainViewController: NSViewController {
         shrinkFrame()
     }
     
+    @IBAction func showMyWindow(_ sender: NSButton) {
+        windowController?.window?.orderFront(self)
+        self.view.window?.orderFront(self)
+    }
+    
     var docData: Data {
         
         get {
@@ -119,11 +128,10 @@ class MainViewController: NSViewController {
         }
     }
     
-    var titleWindowController: TransparentWindowController?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

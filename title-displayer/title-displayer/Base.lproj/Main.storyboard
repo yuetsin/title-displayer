@@ -222,7 +222,7 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="5gI-5U-AMq" customClass="MainViewController" customModule="title_displayer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="ERx-hH-rdd">
+                    <view key="view" wantsLayer="YES" id="ERx-hH-rdd" customClass="NSVisualEffectView">
                         <rect key="frame" x="0.0" y="0.0" width="333" height="178"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -382,6 +382,17 @@ DQ
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zyk-Xs-rbR">
+                                <rect key="frame" x="290" y="16" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PSf-kX-Jmo">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showMyWindow:" target="5gI-5U-AMq" id="uMf-RY-P63"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
