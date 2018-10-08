@@ -51,6 +51,10 @@ class MainViewController: NSViewController {
     
     var titleWindowController: TransparentWindowController?
     
+    @IBAction func performClose(_ sender: NSMenuItem) {
+        self.view.window?.close()
+    }
+    
     @IBAction func onSelectionChanged(_ sender: NSPopUpButton) {
         updateNextPrompt()
     }

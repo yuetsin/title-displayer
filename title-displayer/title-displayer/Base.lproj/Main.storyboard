@@ -92,7 +92,7 @@
                                         </menuItem>
                                         <menuItem title="关闭" keyEquivalent="w" id="1u8-Nb-PVp">
                                             <connections>
-                                                <action selector="orderOut:" target="Ady-hI-5gd" id="orD-kF-Klp"/>
+                                                <action selector="performClose:" target="Ady-hI-5gd" id="khq-Of-Z8d"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="缩放" id="R4o-n2-Eq4">
