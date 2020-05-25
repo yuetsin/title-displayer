@@ -39,7 +39,7 @@ class MainViewController: NSViewController {
     @objc dynamic var selectedIndex: Int = 0
     @objc dynamic var titles: [String] = []
     
-    var fontSize: Int = 24
+    var fontSize: Int = 48
     var windowController: TransparentWindowController?
     var viewController: DisplayerViewController?
     var frameSize: [CGFloat] = [1280.0, 720.0]
@@ -93,23 +93,25 @@ class MainViewController: NSViewController {
     
     @IBAction func pickFrameSize(_ sender: NSPopUpButton) {
         switch sender.titleOfSelectedItem {
-        case "1920 × 1080":
+        case "1920 × 1080"?:
             frameSize = [1920.0, 1080.0]
             break
-        case "1280 × 720":
+        case "1280 × 720"?:
             frameSize = [1280.0, 720.0]
             break
-        case "720 × 480":
+        case "720 × 480"?:
             frameSize = [720.0, 480.0]
             break
         default:
             return
         }
+        
         shrinkFrame()
     }
     
     @IBAction func showMyWindow(_ sender: NSButton) {
         windowController?.window?.orderFront(self)
+        windowController?.window?.center()
         self.view.window?.orderFront(self)
     }
     
@@ -184,6 +186,8 @@ class MainViewController: NSViewController {
         frame.size = NSSize(width: frameSize[0], height: frameSize[1])
         windowController?.window?.setFrame(frame, display: true, animate: true)
         viewController?.updateLabelSize(to: fontSize)
+//        windowController?.window?.center()
     }
+
 }
 

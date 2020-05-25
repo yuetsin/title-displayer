@@ -5,7 +5,7 @@ DEPENDENCIES:
   - YapAnimator
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - YapAnimator
 
 SPEC CHECKSUMS:
@@ -13,4 +13,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d0a56a02f209400e18ace4f9db79e8102cf8d504
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
